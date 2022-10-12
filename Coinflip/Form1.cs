@@ -32,14 +32,31 @@ namespace Coinflip
                 case 0:
                     picCoin.Image = heads;
                     lblResult.Text = "Heads!";
+                    if(radHeads.Checked == true)
+                    {
+                        lblGuess.Text = "You Guessed Correct!";
+                    }
+                    else
+                    {
+                        lblGuess.Text = "You Guessed Wrong!";
+                    }
+                    
                     break;
                 case 1:
                     picCoin.Image = tails;
                     lblResult.Text = "Tails!";
+                    if (radTails.Checked == true)
+                    {
+                        lblGuess.Text = "You Guessed Correct!";
+                    }
+                    else
+                    {
+                        lblGuess.Text = "You Guessed Wrong!";
+                    }
                     break;
             }
             soundPlayer.Play();
-
+            
         }
     }
 }

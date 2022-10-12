@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblGuess = new System.Windows.Forms.Label();
+            this.radTails = new System.Windows.Forms.RadioButton();
+            this.radHeads = new System.Windows.Forms.RadioButton();
             this.btnFlip = new System.Windows.Forms.Button();
             this.picCoin = new System.Windows.Forms.PictureBox();
             this.lblResult = new System.Windows.Forms.Label();
@@ -38,6 +41,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblGuess);
+            this.groupBox1.Controls.Add(this.radTails);
+            this.groupBox1.Controls.Add(this.radHeads);
             this.groupBox1.Controls.Add(this.btnFlip);
             this.groupBox1.Controls.Add(this.picCoin);
             this.groupBox1.Controls.Add(this.lblResult);
@@ -48,9 +54,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Coin";
             // 
+            // lblGuess
+            // 
+            this.lblGuess.AutoSize = true;
+            this.lblGuess.Location = new System.Drawing.Point(154, 330);
+            this.lblGuess.Name = "lblGuess";
+            this.lblGuess.Size = new System.Drawing.Size(99, 15);
+            this.lblGuess.TabIndex = 5;
+            this.lblGuess.Text = "Your Guess Was...";
+            // 
+            // radTails
+            // 
+            this.radTails.AutoSize = true;
+            this.radTails.Location = new System.Drawing.Point(206, 299);
+            this.radTails.Name = "radTails";
+            this.radTails.Size = new System.Drawing.Size(47, 19);
+            this.radTails.TabIndex = 4;
+            this.radTails.TabStop = true;
+            this.radTails.Text = "Tails";
+            this.radTails.UseVisualStyleBackColor = true;
+            // 
+            // radHeads
+            // 
+            this.radHeads.AutoSize = true;
+            this.radHeads.Location = new System.Drawing.Point(100, 299);
+            this.radHeads.Name = "radHeads";
+            this.radHeads.Size = new System.Drawing.Size(58, 19);
+            this.radHeads.TabIndex = 3;
+            this.radHeads.TabStop = true;
+            this.radHeads.Text = "Heads";
+            this.radHeads.UseVisualStyleBackColor = true;
+            // 
             // btnFlip
             // 
-            this.btnFlip.Location = new System.Drawing.Point(160, 306);
+            this.btnFlip.Location = new System.Drawing.Point(161, 348);
             this.btnFlip.Name = "btnFlip";
             this.btnFlip.Size = new System.Drawing.Size(75, 23);
             this.btnFlip.TabIndex = 2;
@@ -98,5 +135,8 @@
         private Button btnFlip;
         private PictureBox picCoin;
         private Label lblResult;
+        private RadioButton radTails;
+        private RadioButton radHeads;
+        private Label lblGuess;
     }
 }
